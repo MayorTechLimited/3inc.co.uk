@@ -1,0 +1,5 @@
+.vantage
+.env/
+public/styles.css
+.DS_Store
+.docker
