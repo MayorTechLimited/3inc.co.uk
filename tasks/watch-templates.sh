@@ -2,5 +2,4 @@
 set -eu
 
 . venv/bin/activate
-cd dist
-python -m http.server
+staticjinja watch --outpath dist

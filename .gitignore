@@ -3,3 +3,5 @@
 public/styles.css
 .DS_Store
 .docker
+dist/
+venv/

@@ -1,0 +1,75 @@
+{% extends "_base.html" %}
+{% block content %}
+    <div class="bg-apple px-4 py-16">
+        <div class="max-w-4xl mx-auto text-white flex flex-row gap-4 items-center">
+            <div class="">
+                <h1 class="uppercase font-bold text-5xl mb-4 heading">Welcome to 3DOM</h1>
+                <p class="text-3xl mb-8">Doing things and being generally awesome.</p>
+                <p>
+                    <a class="bg-white py-2 px-3 text-jet uppercase text-xl font-bold hover:bg-darkblue hover:text-whitewash inline-block" href="/">A button to do something</a>
+                </p>
+            </div>
+            <div class="grow text-center">
+                <i class="fat fa-10x fa-horse"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto py-8">
+        <p class="leading text-center text-2xl">Here's some nice intro text. It explains what we do and demonstrates that we really know what we're doing. I'm not too sure about the fonts that I've picked. I don't think they're "the ones". You can do to the <a href="https://fonts.google.com" class="">Google Web Fonts website</a> to pick different ones. We'll probably want a header font and a body font.</p>
+
+        <h2 class="heading text-center text-4xl mt-8">A Tile Grid</h2>
+
+        <div class="grid grid-cols-3 mt-8 gap-2">
+            <a href="/" class="flex flex-col items-center gap-4 border border-jet p-4 hover:no-underline text-jet hover:bg-darkblue hover:text-whitewash">
+                <div class="uppercase">
+                    A Link
+                </div>
+                <div class="">
+                    <i class="fat fa-5x fa-user-cowboy"></i>
+                </div>
+            </a>
+            <a href="/" class="flex flex-col items-center gap-4 border border-jet p-4 hover:no-underline text-jet hover:bg-apple hover:text-whitewash">
+                <div class="uppercase">
+                    Go Here
+                </div>
+                <div class="">
+                    <i class="fat fa-5x fa-magnet"></i>
+                </div>
+            </a>
+            <a href="/" class="flex flex-col items-center gap-4 border border-jet p-4 hover:no-underline text-jet hover:bg-darkblue hover:text-whitewash">
+                <div class="uppercase">
+                    This one's good
+                </div>
+                <div class="">
+                    <i class="fat fa-5x fa-alicorn"></i>
+                </div>
+            </a>
+            <a href="/" class="flex flex-col items-center gap-4 border border-jet p-4 hover:no-underline text-jet hover:bg-apple hover:text-whitewash">
+                <div class="uppercase">
+                    Woah!
+                </div>
+                <div class="">
+                    <i class="fat fa-5x fa-chess-knight"></i>
+                </div>
+            </a>
+            <a href="/" class="flex flex-col items-center gap-4 border border-jet p-4 hover:no-underline text-jet hover:bg-darkblue hover:text-whitewash">
+                <div class="uppercase">
+                    This one's no good
+                </div>
+                <div class="">
+                    <i class="fat fa-5x fa-house"></i>
+                </div>
+            </a>
+            <a href="/" class="flex flex-col items-center gap-4 border border-jet p-4 hover:no-underline text-jet hover:bg-apple hover:text-whitewash">
+                <div class="uppercase">
+                    Don't click here!
+                </div>
+                <div class="">
+                    <i class="fat fa-5x fa-atom-simple"></i>
+                </div>
+            </a>
+        </div>
+
+    </div>
+{% endblock content %}

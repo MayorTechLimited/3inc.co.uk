@@ -3,7 +3,34 @@
 @tailwind utilities;
 
 @layer components {
-    a {
-        color: green;
+
+    body {
+        font-family: 'Red Hat Text', sans-serif;
+        font-weight: 300;
+    }
+
+    .heading {
+        @apply text-3xl;
+        font-family: 'Gloria Hallelujah', sans-serif;
+        font-weight: 400;
+    }
+
+    h1 {
+        @apply text-5xl;
+        font-weight: 600
+    }
+
+    h2 {
+        @apply text-4xl;
+        font-weight: 600
+    }
+
+    h3 {
+        @apply text-3xl;
+        font-weight: 600
+    }
+
+    main a {
+        @apply text-apple font-bold hover:underline;
     }
 }
