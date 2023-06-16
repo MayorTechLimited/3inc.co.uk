@@ -7,7 +7,7 @@
             <h1 class="uppercase font-bold text-5xl mb-4 heading">Services</h1>
             <p class="text-3xl mb-8">All these things we do.</p>
             <p>
-                <a class="bg-white py-2 px-3 text-jet uppercase text-xl font-bold hover:bg-darkblue hover:text-whitewash inline-block" href="/">A button to do something</a>
+                <a class="bg-white py-2 px-3 text-jet uppercase text-xl font-bold hover:bg-darkblue hover:text-whitewash inline-block hover:no-underline" href="/">A button to do something</a>
             </p>
         </div>
         <div class="grow text-center">
@@ -17,7 +17,13 @@
 </div>
 
 <div class="max-w-4xl mx-auto px-4 py-16">
-    <p class="text-4xl text-center">To be continued...</p>
+    <h1>Services</h1>
+    <p class="ft-1-b ft-1-r ft-1-l ft-2-b ft-2-r ft-2-l ft-3-b ft-3-r ft-3-l ft-4-b ft-4-r ft-4-l ft-5-b ft-5-r ft-5-l ft-6-b ft-6-r ft-6-l"></p>
+    {% for i in [1,2,3,4,5,6] %}
+        <h2 class="ft-{{ i }}-b text-2xl mt-8">What is Lorem Ipsum?</h2>
+        <p class="ft-{{ i }}-r mt-4 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium sem sed lorem mollis, nec commodo lorem pulvinar. Nunc quis urna dapibus, mollis lectus sit amet, ultrices massa. Sed interdum ac libero quis aliquet. Ut erat velit, consectetur sed lacus sed, commodo finibus diam. Maecenas ullamcorper ultricies arcu dapibus pellentesque. Duis posuere ullamcorper massa, vel vulputate libero semper et. Sed vitae lobortis orci. Etiam elementum pretium eros sit amet pulvinar. </p>
+        <p class="ft-{{ i }}-l mt-4 text-xl">Cras malesuada, erat a convallis congue, justo odio aliquet eros, sit amet rhoncus turpis odio at diam. Ut id lacinia lacus, vel feugiat ipsum. Aliquam bibendum, quam rhoncus viverra pharetra, mi ligula tempor orci, a consequat odio magna vel lacus. Praesent pellentesque consequat mauris viverra consequat. Ut lacus metus, egestas convallis fermentum eget, malesuada a justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ligula in lacus ornare varius. Ut rutrum facilisis mi, vitae ultricies nisi luctus ac. Donec odio tortor, ornare ac consequat in, congue eget augue. </p>
+    {% endfor %}
 </div>
 
 {% endblock content %}
