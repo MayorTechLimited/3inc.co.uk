@@ -1,0 +1,16 @@
+{% macro cta(name, description, button_text, button_link, icon, bg="bg-apple", level="h2", icon_position="right") %}
+    <div class="{{ bg }} px-4 py-16">
+        <div class="max-w-4xl mx-auto text-white flex flex-col {% if icon_position == "right" %}md:flex-row{% else %}md:flex-row-reverse{% endif %} gap-4 items-center">
+            <div class="mb-8 md:mb-0">
+                <{{ level }} class="uppercase font-bold text-5xl mb-4 heading">{{ name }}</{{ level }}>
+                <p class="text-3xl mb-8">{{ description }}</p>
+                <p>
+                    <a class="bg-white py-2 px-3 text-jet uppercase text-xl font-bold hover:bg-darkblue hover:text-whitewash inline-block hover:no-underline" href="{{ button_link }}">{{ button_text }}</a>
+                </p>
+            </div>
+            <div class="grow text-center">
+                <i class="fa-10x {{ icon }}"></i>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

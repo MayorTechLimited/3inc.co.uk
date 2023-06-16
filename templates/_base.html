@@ -1,3 +1,4 @@
+{% from "_macros.html" import cta %}
 <!DOCTYPE html>
 <html lang="en" class="h-full">
 <head>
@@ -34,20 +35,7 @@
         </div>
     </header>
     <main class="flex-grow">{% block content %}{% endblock %}</main>
-    <div class="bg-darkblue px-4 py-16">
-        <div class="max-w-4xl mx-auto text-white flex flex-row gap-4 items-center">
-            <div class="grow text-center">
-                <i class="fat fa-10x fa-car"></i>
-            </div>
-            <div class="">
-                <h2 class="uppercase font-bold text-5xl mb-4 heading">A call to action</h2>
-                <p class="text-3xl mb-8">You should do this! It's great!</p>
-                <p>
-                    <a class="bg-white py-2 px-3 text-jet uppercase text-xl font-bold hover:bg-apple hover:text-whitewash inline-block" href="/">The action</a>
-                </p>
-            </div>
-        </div>
-    </div>
+    {{ cta("A call to action", "You should do this! It's great!", "The action", "/", "fat fa-car", level="h2", bg="bg-darkblue", icon_position="left") }}
     <footer class="bg-whitewash p-4">
         <div class="max-w-3xl mx-auto flex flex-col md:flex-row flex-wrap gap-4 md:items-center">
             <div class="">
