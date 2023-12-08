@@ -1,0 +1,20 @@
+{% extends "_base.html" %}
+{% from "_macros.html" import cta %}
+
+{% block content %}
+{{ cta("Blog", "Occasional updates on the work I'm doing and the wisdom people have shared with me.", "Book some training", "/contact/", "fas fa-pen-to-square", level="h1") }}
+
+<div class="max-w-4xl mx-auto px-4 py-16 text-xl">
+    <ul>
+        {% for bp in blog_posts %}
+            <li class="mb-4">
+                <p><small>{{ bp.date }}</small></p>
+                <p><a href="{{ bp.url }}">{{ bp.title }}</a></p>
+                <p class="line-clamp-2">{{ bp.excerpt }}</p>
+                <p class="text-right"><small><a href="{{ bp.url }}">Read more</a></small></p>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock content %}

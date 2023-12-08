@@ -9,7 +9,7 @@ set -eu
 . venv/bin/activate
 
 rm -rf dist
-staticjinja build --outpath ./dist
+vg watch-templates build
 cp -r images dist/
 tailwindcss -i ./styles.css -o ./dist/styles.css --minify
 
