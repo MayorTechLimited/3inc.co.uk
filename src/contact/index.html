@@ -1,0 +1,16 @@
+{% extends "_base.html" %}
+{% from "_macros.html" import cta %}
+
+{% block content %}
+{{ cta("Contact Us", "Please do get in touch, I'm looking forward to hearing from you.", none, none, "fas fa-envelope", level="h1") }}
+
+
+<div class="max-w-4xl mx-auto px-4 py-16 text-xl">
+    <p class="text-center">Email me on</p>
+    <p class="text-center text-5xl"><a href="mailto:hello@3inc.co.uk" class="">hello@3inc.co.uk</a></p>
+
+    <p class="mt-8 text-center">Reach out on LinkedIn</p>
+    <p class="text-center text-5xl"><a href="https://www.linkedin.com/in/phoebe-gibbons-a936b51bb/" class="">@phoebe-gibbons</a></p>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,28 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<div class="max-w-4xl mx-auto px-4 py-16 text-xl">
+    <p>
+        <a href="/blog/">
+            <i class="fa-fw fat fa-angle-left"></i>
+            <span>Back to list</span>
+        </a>
+    </p>
+    <p class="mb-1 mt-4">{{ date }}</p>
+    <div class="content">
+        {{ post_content_html|safe }}
+    </div>
+</div>
+
+<style>
+    .content p, .content h1, .content h2, .content ul {
+        margin-bottom: 2rem;
+    }
+    .content ul {
+        list-style-type: disc;
+        margin-left: 2em;
+    }
+</style>
+
+{% endblock content %}
