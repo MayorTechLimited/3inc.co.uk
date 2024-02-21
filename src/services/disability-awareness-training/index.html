@@ -1,0 +1,39 @@
+{% extends "_base.html" %}
+{% from "_macros.html" import cta %}
+
+{% block content%}
+
+{{ cta("Disability awareness training", "This is an all day training offer which is made up of three informative, interactive and insightful workshops.", "Book some training", "/contact/", "fat fa-head-side-brain", level="h1") }}
+
+<div class="mx-auto max-w-4xl px-4 py-16 text-xl">
+    <p class="mb-4">
+        Participants will be able to experience trying some practical tasks as well as the opportunity to develop learning around different types of disability. With the opportunity to engage in a Q&A, participants will embark on a unique learning experience. Please see below for further details.
+    </p>
+    <p class="mb-4 font-bold">Session 1 - Disability and it's effects</p>
+    <ul class="mb-4 ml-4 list-disc">
+        <li>General information, definitions, facts and figures</li>
+        <li>Medical and social models</li>
+        <li>Lived experience</li>
+        <li>Emotional impact of disability</li>
+    </ul>
+    <p class="mb-4 font-bold">
+        Session 2 - Deep dive into different disabilities
+    </p>
+    <p class="mb-4">Specific Information and Advice</p>
+    <ul class="mb-4 ml-4 list-disc">
+        <li>Physical disability</li>
+        <li>Sensory disability</li>
+        <li>Neurodiversity</li>
+        <li>Learning disability/ difficulty</li>
+    </ul>
+    <p class="mb-4 font-bold">Session 3 - Disability in Practise</p>
+    <p class="mb-4">Practical tasks and interactive workshop</p>
+    <ul class="mb-4 ml-4 list-disc">
+        <li>Sighted guiding and audio description</li>
+        <li>Hearing loss tasks</li>
+        <li>Physical Challenges tasks</li>
+    </ul>
+    <p class="mb-4">Q and A</p>
+</div>
+
+{% endblock %}

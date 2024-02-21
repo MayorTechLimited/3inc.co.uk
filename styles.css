@@ -5,7 +5,8 @@
 @layer components {
 
     body {
-        font-family: 'Dosis', sans-serif;
+        /* font-family: 'Dosis', sans-serif; */
+        font-family: Calibri,Verdana,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
         font-weight: 300;
     }
 
@@ -31,7 +32,7 @@
     }
 
     main a {
-        @apply text-apple font-bold hover:underline;
+        @apply text-apple font-bold hover:underline focus:ring-apple;
     }
 
 }
