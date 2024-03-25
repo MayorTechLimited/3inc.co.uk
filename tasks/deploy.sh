@@ -13,7 +13,7 @@ vg watch-templates build
 cp -r images dist/
 tailwindcss -i ./styles.css -o ./dist/styles.css --minify
 
-ghp-import dist --branch=main --cname=3inc.mayortech.co.uk
+ghp-import dist --branch=main --cname=3inc.co.uk
 
 git checkout main
 git push origin main
